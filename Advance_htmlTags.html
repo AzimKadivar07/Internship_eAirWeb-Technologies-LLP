@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>List, Table and Form Tag</h1>
+    </center>
+    <hr>
+    <h2>Topic 1: Lits</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <ol type="A">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <ol type="a">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <ol type="I">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <ol type="i">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <ol type="1" start="5">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+
+    </ul>
+    <ul type="circle">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ul>
+    <ul type="square">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ul>
+    <h3>Nested List</h3>
+    <ol>
+        <li>Months</li>
+        <ul>
+            <li>January</li>
+            <li>February</li>
+            <li>March</li>
+            <li>April</li>
+        </ul>
+        <li>Days</li>`
+        <ul>
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+    </ol>
+    <hr>
+    <h2>Topic 2: Table</h2>
+    <h3>Without Border</h3>
+    <table>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Azim</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Safik</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nisar</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+    </table>
+    <h3>With Border</h3>
+    <table border="1">
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Azim</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Safik</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nisar</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+    </table>
+    <h3>Table With Colspan</h3>
+    <table border="1">
+        <tr>
+            <th colspan="4"> Student Information</th>
+        </tr>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Azim</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Safik</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nisar</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+    </table>
+    <h3>Table With Rowspan</h3>
+    <table border="1">
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Azim</td>
+            <td>22</td>
+            <td rowspan="3">Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Safik</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nisar</td>
+            <td>24</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Topic 3: Form</h2>
+    <h3>Form With All Input Types </h3>
+
+    <form>
+        <lable>Name</lable>
+        <input type="text">
+        <br>
+        <lable>Password</lable>
+        <input type="password">
+        <br>
+        <lable>Email</lable>
+        <input type="email">
+        <br>
+        <lable>Radio</lable>
+        <input type="radio">
+        <br>
+        <lable>CheckBox</lable>
+        <input type="checkbox">
+        <br>
+        <lable>Range</lable>
+        <input type="range">
+        <br>
+        <lable>File</lable>
+        <input type="file">
+        <br>
+        <lable>Color</lable>
+        <input type="color">
+        <br>
+        <lable>Button</lable>
+        <input type="button">
+        <br>
+        <lable>TextArea</lable>
+        <input type="textarea" cols="30" rows="10">
+        <br>
+        <lable>Submit</lable>
+        <input type="submit">
+        <br>
+        <lable>Date</lable>
+        <input type="date">
+        <br>
+        <lable>Number</lable>
+        <input type="number">
+        <br>
+        <lable>Time</lable>
+        <input type="time">
+        <br>
+        <lable>url</lable>
+        <input type="url">
+        <br>
+        <lable>Reset</lable>
+        <input type="reset">
+        <br>
+        <lable>Tel</lable>
+        <input type="tel">
+        <br>
+        <label>Dropdown</label>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+    </form>
+    <h3> Registration Form</h3>
+
+    <form>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <lable for="fname">First Name</lable>
+            <input type="text" id="fname" name="name" value="" placeholder="Enter Your First Name">
+            <br><br>
+            <lable for="lname">Last Name</lable>
+            <input type="text" id="lname" name="name" value="" placeholder="Enter Your Last Name">
+            <br><br>
+            <lable for="useremail">Email</lable>
+            <input type="email" id="useremail" name="email" value="" placeholder="Enter Your Email">
+            <br><br>
+            <lable for="password">Password</lable>
+            <input type="password" id="userpassword" name="password" value="" placeholder="Enter Your Password">
+            <br><br>
+            <lable for="dob">DOB</lable>
+            <input type="date" id="userdob" name="dob" value="">
+            <br><br>
+            <lable for="gender">Gender:</lable>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <lable for="male">Male</lable>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <lable for="female">Female</lable>
+            <br><br>
+            <lable for="moblie">Moblie No.</lable>
+            <input type="tel" id="usermoblie" name="moblie" value="" placeholder="Enter Your Moblie No.">
+            <br><br>
+            <lable for="address">Address</lable>
+            <textarea cols="20" rows="3" placeholder="Enter Your Address "></textarea>
+            <br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
