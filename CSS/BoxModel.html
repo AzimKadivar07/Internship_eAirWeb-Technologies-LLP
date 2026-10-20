@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+        }
+        #b1{
+            background-color: red;
+            padding: 10px 20px 5px 200px;
+        }
+        #b2{
+            background-color: green;
+            margin: 40px 20px 10px 50px;
+        }
+        #container{
+            background-color: rgba(211, 211, 211, 0.784);
+        }
+        .border{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            margin: 20px;
+        }
+        #d1{
+            border: 5px solid red;
+        }
+        #d2{
+            border: 5px dotted blue;
+        }
+        #d3{
+            border: 5px dashed green;
+        }
+           
+        #d4{
+            border: 5px solid black;
+            border-radius: 50px;
+        }
+        #d5{
+            border: 5px solid black;
+            border-radius: 0px 0px 0px 50px;
+        }
+        </style>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    <hr>
+    <h3>Padding and Margin</h3>
+    <div id="container">
+    <div class="box" id="b1">Hello</div>
+    <div class="box" id="b2">world</div>
+    </div>
+    <h3>Border</h3>
+    <h4>Diffrent Border Types</h4>
+    <div class="border" id="d1">Azim</div>
+    <div class="border" id="d2"> Kadivar</div>
+    <div class="border" id="d3">Web Developer</div>
+    <h4>Border Radius</h4>
+    <div class="border" id="d4"></div>
+    <div class="border" id="d5"></div>
+
+</body>
+</html>
