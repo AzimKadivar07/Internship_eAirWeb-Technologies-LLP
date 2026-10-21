@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: darkseagreen;
+            border: 5px solid black;
+            margin:5px;
+            text-align: center;
+        }
+        #container{
+            width: 800px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+        }
+          #container2{
+            width: 800px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+        }
+            #container3{
+            width: 800px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+               #container4{
+            width: 800px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+        }
+               #container5{
+            width: 800px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+              #container6{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(230, 128, 5);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+                  #container7{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(230, 128, 5);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+                  #container8{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(230, 128, 5);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+                     #container9{
+            width: 1100px;
+            height: 200px;
+            background-color: rgb(29, 23, 15);
+            display: flex;
+            justify-content: start;
+        }
+                        #container10{
+            width: 1100px;
+            height: 200px;
+            background-color:  rgb(29, 23, 15);
+            display: flex;
+            justify-content: end;
+        }
+                            #container11{
+            width: 1100px;
+            height: 200px;
+            background-color: rgb(29, 23, 15);
+            display: flex;
+            justify-content: center;
+        }
+             #container12{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(74, 41, 1);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+             }
+                 #container13{
+            width: 800px;
+            height: 500px;
+            background-color: rgb(74, 41, 1);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+             }
+                                 #container14{
+            width: 1100px;
+            height: 200px;
+            background-color: rgb(29, 23, 15);
+            display: flex;
+            justify-content: space-around;
+        }
+                                  #container15{
+            width: 1100px;
+            height: 200px;
+            background-color: rgb(29, 23, 15);
+            display: flex;
+            justify-content: space-between;
+        }
+                                  #container16{
+            width: 1100px;
+            height: 200px;
+            background-color: rgb(29, 23, 15);
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Flex Box Property</h1>
+    <hr>
+    <h2>Flex Box</h2>
+    <div id="container">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    </div>
+    <br>
+    <h2>Flex Direction</h2>
+    <h3>FlexDirection: Row</h3>
+    <div id="container2">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    </div>
+     <h3>FlexDirection: Row-Reverse</h3>
+    <div id="container3">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    </div>
+      <h3>FlexDirection: Column</h3>
+    <div id="container4">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    </div>
+      <h3>FlexDirection: column-Reverse</h3>
+    <div id="container5">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    </div>
+    <br>
+    <hr>
+    <h2>Flex Wrap Property</h2>
+    <h3>FlexWrap: NoWrap</h3>
+     <div id="container6">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    </div>
+     <h3>FlexWrap: Wrap</h3>
+     <div id="container7">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    </div>
+       <h3>FlexWrap: WrapReverse</h3>
+     <div id="container8">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    </div>
+    <br>
+    <hr>
+     <h3>Justify Content: Start</h3>
+     <div id="container9">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+  <h3>Justify Content: End</h3>
+     <div id="container10">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+  <h3>Justify Content: Center</h3>
+     <div id="container11">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+  <h3>Justify Content: Space-around</h3>
+     <div id="container14">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+  <h3>Justify Content: space-between</h3>
+     <div id="container15">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+  <h3>Justify Content: space-evenly</h3>
+     <div id="container16">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+</div>
+<br>
+<hr>
+<h2>Align-Items and Align-Content Property</h2>
+<h3>Align-items: Center</h3>
+     <div id="container13">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     </div>
+     <h3>Align-Content: Center</h3>
+     <div id="container13">
+     <div class="box">Box1</div>
+     <div class="box">Box2</div>
+     <div class="box">Box3</div>
+     <div class="box">Box4</div>
+     <div class="box">Box5</div>
+     <div class="box">Box6</div>
+</body>
+</html>

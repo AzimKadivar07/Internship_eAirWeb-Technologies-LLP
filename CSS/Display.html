@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <head>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            display: inline;
+        }
+        .box1{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            margin: 10px;
+            display: block;
+        }
+       .box2{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            display: inline-block;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            margin: 10px;
+        }
+        #b11{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display Property</h1>
+    <hr>
+    <h3>Display:Block</h3>
+    <div class="box1">box1</div>
+    <div class="box1">box2</div>
+    <div class="box1">box3</div>
+    <br>
+    <h3>Display:inline</h3>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    <div class="box">box6</div>
+    <br>
+    <br>
+    <h3>Display:inline-block</h3>
+    <div class="box2">box7</div>
+    <div class="box2">box8</div>
+    <div class="box2">box9</div>
+    <br>
+    <h3>Display:none (one Box is removed from layout)</h3>
+    <div class="box3">box10</div>
+    <div class="box3" id="b11">box11</div>
+    <div class="box3">box12</div>
+
+</body>
+</html>

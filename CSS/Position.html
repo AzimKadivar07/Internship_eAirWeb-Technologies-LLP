@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px; padding: 0px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            text-align: center;
+        }
+        #b1{
+            position: static;
+            background-color: brown;
+        }
+        #b2{
+            position: relative;
+            top:20px;
+            left:40px;
+            background-color: darkkhaki;
+        }
+        #b3{
+            position: absolute;
+            top:30px;
+            left: 20px;
+            background-color: darkgreen;
+        }
+        #b4{
+            position: fixed;
+            bottom:50px;
+            left:250px;
+            background-color: coral;
+        }
+        #first{
+            background-color: aqua;
+            z-index: 1;
+            height: 200px;
+            width:200px;
+        }
+        #second{
+            position: relative;
+            background-color: aquamarine;
+            z-index: 2;
+            top:-100px;
+            height: 200px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="b1">Static</div>
+    <div class="box" id="b2">Relative</div>
+    <div class="box" id="b3">Absolute</div>
+    <div class="box" id="b4">Fixed</div>
+
+    <div  id="first">Z-index</div>
+    <div  id="second">Z-index2</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae beatae, hic maiores voluptate suscipit alias! Pariatur nam qui consectetur animi molestiae sint totam saepe impedit molestias ea provident eos repudiandae aspernatur perferendis, illo nesciunt sunt possimus optio voluptatem velit consequatur labore nihil amet quaerat? Sit, voluptatum distinctio at dicta quae fugit asperiores mollitia adipisci praesentium, repellendus velit fugiat numquam ducimus minus. Eveniet harum magni reprehenderit accusantium consectetur quam ipsum vel repudiandae neque dolorem. Iure id culpa doloribus odio modi saepe eligendi adipisci obcaecati deleniti, facilis eum similique ipsa officiis cumque sit facere quisquam dicta explicabo officia fugiat corporis sapiente. Culpa itaque perspiciatis magnam nobis veniam. Consequuntur, odio reiciendis, molestias dolorem eius dicta repellendus molestiae culpa quibusdam voluptas sunt at maiores doloribus vel natus sed quos eligendi, placeat quod. Animi architecto perferendis est deleniti saepe placeat porro praesentium, excepturi, commodi unde ab earum doloribus blanditiis quam quibusdam pariatur veritatis voluptatibus temporibus consectetur vitae nemo? Consectetur, eligendi? Eveniet, aperiam aut eum impedit fugit ipsum dolor suscipit reprehenderit cumque vitae ullam voluptatibus odit maxime expedita numquam rem quia similique excepturi, officiis, debitis non sint. Modi quod maiores, doloremque asperiores temporibus nulla. Voluptatem laborum voluptatum vero eveniet rem cum assumenda quaerat alias labore earum hic facere incidunt nam debitis, aut architecto excepturi! Amet corrupti doloribus itaque quos asperiores. Similique dolore cupiditate officia hic eaque suscipit eligendi porro facilis voluptatibus distinctio tenetur quibusdam voluptas magni ipsa, minima, maxime aspernatur ducimus placeat! Illo ad dolor dolorem commodi laudantium nobis voluptatem, rerum id delectus saepe doloremque, nam eos aliquam? Praesentium, vel eveniet! Id explicabo eligendi ipsum, asperiores delectus soluta incidunt deserunt rem fugiat obcaecati placeat ut maiores, cumque fugit nemo beatae repellat optio dolores qui architecto maxime! Quae exercitationem atque dolores dolorem consequuntur a tempora voluptate voluptates earum minus! Optio consequuntur magnam, quis commodi dolores quod.</p>
+</body>
+</html>
