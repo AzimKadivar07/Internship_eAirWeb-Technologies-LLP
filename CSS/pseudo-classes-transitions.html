@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pseudo{
+            width:70px;
+            height:30px;
+            background-color: crimson;
+            border: 5px solid black;
+
+        }
+        .pseudo:hover{
+               width:80px;
+            height:40px;
+            background-color: rgb(23, 220, 20);
+        }
+        .pseudo:active{
+            width:80px;
+            height:40px;
+            background-color: rgb(20, 27, 220);
+        }
+      #transition {
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;  */
+    transition:all 1s ease-in-out 1s;
+}
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes and Transition Property</h1>
+    <hr>
+    <h2>Peseudo Classes( Hover and Active)</h2>
+    <div class="pseudo">Click Me</div>
+    <hr>
+    <br>
+    <h2>Transition property</h2>
+    <div class="pseudo" id="transition">Click Me</div>
+</body>
+</html>

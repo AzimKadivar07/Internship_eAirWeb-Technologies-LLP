@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        #box1{
+            background-color: hotpink;
+        }
+         #box1:hover{
+            transform: rotate(45deg);
+        }
+          #box2{
+            background-color: rgb(201, 78, 232);
+        }
+         #box2:hover{
+            transform: rotatex(360deg);
+        }
+          #box3{
+            background-color: rgb(223, 33, 90);
+        }
+         #box3:hover{
+            transform: rotatey(180deg);
+        }
+               .boxpro{
+            width: 100px;
+            height: 100px;
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        #boxpro1{
+            background-color: hotpink;
+        }
+         #boxpro1:hover{
+            transform: scale(2);
+        }
+          #boxpro2{
+            background-color: rgb(201, 78, 232);
+        }
+         #boxpro2:hover{
+            transform: scalex(2);
+        }
+          #boxpro3{
+            background-color: rgb(223, 33, 90);
+        }
+         #boxpro3:hover{
+            transform: scaley(3);
+        }
+                 .boxpromax{
+            width: 100px;
+            height: 100px;
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        #boxpromax1{
+            background-color: hotpink;
+        }
+         #boxpromax1:hover{
+            transform: translate(50px);
+        }
+          #boxpromax2{
+            background-color: rgb(201, 78, 232);
+        }
+         #boxpromax2:hover{
+            transform: translate(50px, 50px);
+        }
+          #boxpromax3{
+            background-color: rgb(223, 33, 90);
+        }
+         #boxpromax3:hover{
+            transform: translatex(30px);
+        }
+           #boxpromax4{
+            background-color: rgb(127, 8, 8);
+        }
+         #boxpromax4:hover{
+            transform: translatey(30px);
+        }
+                   .boxpromaxplus{
+            width: 100px;
+            height: 100px;
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+   #boxpromaxplus1 {
+    background-color: hotpink;
+}
+
+#boxpromaxplus1:hover {
+    transform: skew(45deg);
+}
+
+#boxpromaxplus2 {
+    background-color: rgb(201, 78, 232);
+}
+
+#boxpromaxplus2:hover {
+    transform: skew(20deg, 30deg);
+}
+    </style>
+</head>
+<body>
+    <h1>CSS Transform Property</h1>
+    <hr>
+    <h1>Rotate</h1>
+    <h2>Rotate (45 degree)</h2>
+    <div class="box" id="box1">Rotate</div>
+      <h2>Rotate X  (360 degree)</h2>
+    <div class="box" id="box2">Rotatex</div>
+      <h2>Rotate Y  (180 degree)</h2>
+    <div class="box" id="box3">Rotatey</div>
+    <hr>
+     <h1>Scale</h1>
+       <h2>sacle (2)</h2>
+    <div class="boxpro" id="boxpro1">Scale</div>
+      <h2>scale X (2)</h2>
+    <div class="boxpro" id="boxpro2">Scale Y</div>
+      <h2>scale Y (3)</h2>
+    <div class="boxpro" id="boxpro3">Scale X</div>
+    <hr>
+     <h1>Translate</h1>
+       <h2>Translate (40)px</h2>
+    <div class="boxpromax" id="boxpromax1">Translate (40)px</div>
+      <h2>Translate (50px, 50px)</h2>
+    <div class="boxpromax" id="boxpromax2">Translate (50px, 50px)</div>
+      <h2>Translate Y (30px)</h2>
+    <div class="boxpromax" id="boxpromax3">Translate Y (30px)</div>
+      <h2>Translate X (30px)</h2>
+    <div class="boxpromax" id="boxpromax4">Translate X (30px)</div>
+    <hr>
+   
+<h1>Skew</h1>
+<h2>Skew (45deg)</h2>
+<div class="boxpromaxplus" id="boxpromaxplus1">
+    Skew (45deg)
+</div>
+
+<h2>Skew (20deg, 30deg)</h2>
+<div class="boxpromaxplus" id="boxpromaxplus2">
+    Skew (20deg, 30deg)
+</div>
+    <hr>
+    
+
+
+      

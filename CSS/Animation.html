@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .ani{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left:10px;
+        }
+    @keyframes azim {
+    from {
+        left: 10px;
+    }
+
+    to {
+        left: 500px;
+    }
+}
+#ani1{
+background-color: rgb(31, 34, 237);
+ animation-name: azim;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+}
+#ani2{
+    background-color: rgb(230, 43, 10);
+ animation-name: azim;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+}
+#ani3{
+     background-color: rgb(10, 230, 32);
+ animation-name: azim;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+}
+#ani4{
+     background-color: rgb(235, 227, 11);
+ animation-name: azim;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse
+}
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <hr>
+    <h3>Animation Direction: Normal</h3>
+<div class="ani" id="ani1">Animation</div>
+<br>
+ <h3>Animation Direction: Reverse</h3>
+<div class="ani" id="ani2">Animation2</div>
+<br>
+ <h3>Animation Direction: Alternative</h3>
+<div class="ani" id="ani3">Animation3</div>
+<br>
+ <h3>Animation Direction: Reverse-Alternative</h3>
+<div class="ani" id="ani4">Animation4</div>
+</body>
+</html> 
