@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #A5C9CA;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E4052;
+    padding:10px
+}
+nav h2{
+    margin: 0px;
+    color: white;
+    padding-left: 30px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding-right: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #A5C9CA;
+
+}
+#Home {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home main {
+    width: 1000px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.part {
+    margin-top: 0px;
+}
+
+#partin {
+    position: static;
+    max-width: 500px;
+    /* text-align: center; */
+}
+
+#Home img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #2E4052;
+    border-radius: 50%;
+}
+
+#Home form {
+    text-align: center;
+    margin-top: 25px;
+}
+.btnc{
+    background-color: #2E4052;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+#containerp{
+    margin-top: 200px;
+}
+.sections{
+    text-align: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #2E4052;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Education{
+       /* display: flex;
+    justify-content: center;
+    gap: 2px;
+    text-align: center;
+    align-items: center;
+    flex-direction: row; */
+    display: flex;
+    justify-content: center;
+}
+    #Experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+#Certificate{
+    display: flex;
+    justify-content: center;
+}
+.boxpro{
+     width: 100px;
+    height: 50px;
+    background-color: #2E4052;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+   #Skills {
+    display: flex;
+    justify-content: center;
+}
+#Project{
+    display: flex;
+    justify-content: center;
+}
+.boxpromax{
+    margin:2px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 350px;
+}
+#btnc2{
+    background-color: #2E4052;
+    color:white;
+    border-radius: 5px;
+    padding: 7px;
+}
+.link{
+    text-decoration: none;
+    color: #2E4052;
+    margin: 10px;
+}
+footer {
+    padding: 5px;
+    background-color: #2E4052;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+    footer p {
+    margin: 0px;
+}
