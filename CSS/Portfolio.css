@@ -1,36 +1,45 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
-    background-color: #A5C9CA;
+    background-color: #a5c9ca;
+    color: #2e4052;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2E4052;
-    padding:10px
+    background-color: #2e4052;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
 }
-nav h2{
+
+nav h2 {
     margin: 0px;
     color: white;
     padding-left: 30px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
     padding-right: 40px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
 }
-nav a:hover{
-    text-decoration: none;
-    color: #A5C9CA;
 
+nav a:hover {
+    text-decoration: none;
+    color: #a5c9ca;
 }
+
+
 #Home {
     min-height: 600px;
     display: flex;
@@ -56,14 +65,14 @@ nav a:hover{
 #partin {
     position: static;
     max-width: 500px;
-    /* text-align: center; */
 }
+
 
 #Home img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid #2E4052;
+    border: 5px solid #2e4052;
     border-radius: 50%;
 }
 
@@ -71,98 +80,176 @@ nav a:hover{
     text-align: center;
     margin-top: 25px;
 }
-.btnc{
-    background-color: #2E4052;
+
+.btnc {
+    background-color: #2e4052;
     color: white;
     padding: 12px;
     border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+     transition: transform 0.3s ease;
 }
-#containerp{
+
+.btnc:hover {
+    background-color: #2e4052;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.btnc:active {
+    background-color: #a5c9ca;
+    color: #2e4052;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #2e4052;
+    transform: scale(1.05);
+}
+
+#btn1 {
+    margin-right: 15px;
+}
+
+#containerp {
     margin-top: 200px;
 }
-.sections{
+
+
+.sections {
     text-align: center;
+    color: #2e4052;
 }
-.box{
+
+.about-text {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #2e4052;
+}
+
+.box {
     width: 200px;
     height: 200px;
-    background-color: #2E4052;
+    background-color: #2e4052;
     color: white;
     margin: 10px;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease;
 }
-#Education{
-       /* display: flex;
-    justify-content: center;
-    gap: 2px;
-    text-align: center;
-    align-items: center;
-    flex-direction: row; */
+
+.box:hover {
+    transform: scale(1.05);
+     color: #a5c9ca;
+      
+}
+
+#Education {
     display: flex;
     justify-content: center;
 }
-    #Experience {
+
+#Experience {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
 }
-#Certificate{
+
+#Certificate {
     display: flex;
     justify-content: center;
 }
-.boxpro{
-     width: 100px;
+
+.boxpro {
+    width: 100px;
     height: 50px;
-    background-color: #2E4052;
+    background-color: #2e4052;
     color: white;
     margin: 10px;
     border-radius: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+     transition: transform 0.3s ease;
 }
-   #Skills {
+.boxpro:hover {
+    transform: scale(1.05);
+    color: #a5c9ca;
+      
+}
+
+#Skills {
     display: flex;
     justify-content: center;
 }
-#Project{
+
+#Project {
     display: flex;
     justify-content: center;
 }
-.boxpromax{
-    margin:2px;
+
+.boxpromax {
+    margin: 2px;
     border-radius: 5px;
     padding: 5px;
     width: 350px;
+    color: #2e4052;
 }
-#btnc2{
-    background-color: #2E4052;
-    color:white;
+
+#btnc2 {
+    background-color: #2e4052;
+    color: white;
     border-radius: 5px;
     padding: 7px;
 }
-.link{
+
+#btnc2:active {
+    background-color: #a5c9ca;
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    transform: scale(1.05);
+    
+}
+
+.link {
     text-decoration: none;
-    color: #2E4052;
+    color: #2e4052;
     margin: 10px;
 }
+
+
 footer {
     padding: 5px;
-    background-color: #2E4052;
+    background-color: #2e4052;
     margin-top: 40px;
     color: white;
     text-align: center;
 }
-    footer p {
+
+footer p {
     margin: 0px;
+}
+
+#Home,
+#About,
+#Education,
+#Experience,
+#Certificate,
+#Skills,
+#Project,
+#Contact {
+    scroll-margin-top: 140px;
 }
