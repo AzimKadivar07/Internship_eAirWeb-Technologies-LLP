@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Cricket Game 4</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Bat Ball Stump Game</h1>
+
+  <button onclick="
+    let batComputerChoice = getcomputerChoice();
+    let batResultMsg = getResult('Bat', batComputerChoice);
+    showResult('Bat', batComputerChoice, batResultMsg);
+  ">
+    Bat
+  </button>
+
+  <button onclick="
+    let ballComputerChoice = getcomputerChoice();
+    let ballResultMsg = getResult('Ball', ballComputerChoice);
+    showResult('Ball', ballComputerChoice, ballResultMsg);
+  ">
+    Ball
+  </button>
+
+  <button onclick="
+    let stumpComputerChoice = getcomputerChoice();
+    let stumpResultMsg = getResult('Stump', stumpComputerChoice);
+    showResult('Stump', stumpComputerChoice, stumpResultMsg);
+  ">
+    Stump
+  </button>
+
+  <script>
+    //  change done here below comment
+    let score = {
+        Win: 0,
+        Lose: 0,
+        Tie: 0,    
+       
+        displayScore: function() {
+            return(`Number Of Matches Win: ${score.Win},
+             Number Of Matches Lose: ${score.Lose},
+               Number Of Matches Tie: ${score.Tie}`);
+        }
+    }
+
+    function getcomputerChoice() {
+      let computerChoice;
+      let randomNumber = Math.random() * 3;
+
+      if (randomNumber > 0 && randomNumber <= 1) {
+        computerChoice = 'Bat';
+      } else if (randomNumber > 1 && randomNumber <= 2) {
+        computerChoice = 'Ball';
+      } else {
+        computerChoice = 'Stump';
+      }
+
+      return computerChoice;
+    }
+
+    function getResult(userMove, ComputerMove) {
+
+      if (userMove === 'Bat') {
+        if (ComputerMove === 'Ball') {
+            score.Win++;
+          return 'User won.';
+        } else if (ComputerMove === 'Bat') {
+            score.Tie++;
+          return `It's a tie`;
+        } else if (ComputerMove === 'Stump') {
+            score.Lose++;
+          return 'Computer has won';
+        }
+      }
+
+      if (userMove === 'Ball') {
+        if (ComputerMove === 'Stump') {
+          score.Win++;
+          return 'User won.';
+        } else if (ComputerMove === 'Ball') {
+            score.Tie++;
+          return `It's a tie`;
+        } else if (ComputerMove === 'Bat') {
+            score.Lose++;
+          return 'Computer has won';
+        }
+      }
+
+      if (userMove === 'Stump') {
+        if (ComputerMove === 'Bat') {
+            score.Win++;
+          return 'User won.';
+        } else if (ComputerMove === 'Stump') {
+            score.Tie++;
+          return `It's a tie`;
+        } else if (ComputerMove === 'Ball') {
+            score.Lose++;
+          return 'Computer has won';
+        }
+      }
+    }
+
+    function showResult(userMove, ComputerMove, resultMsg) {
+      alert(
+        `You have chosen ${userMove}. Computer choice is ${ComputerMove}  ${resultMsg} 
+
+        ${score.displayScore()}`
+      );
+    }
+
+  // change done here above comment
+
+  </script>
+</body>
+
+</html>
