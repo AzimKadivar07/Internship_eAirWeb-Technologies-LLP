@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .odd {
+            background-color: aqua;
+        }
+
+        .even {
+            background-color: rgb(255, 106, 0);
+        }
+
+        #btn {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="greetings"></h1>
+    <hr>
+    <h2>When you Click It Number Increase and color change according to Even and Odd Number and it will also survive Page Refresh </h2>
+    <button id="btn" onclick=" btnpress()"></button>
+    <script>
+        function greet(personName = 'Dear') {
+            let myDate = new Date();
+            let hours = myDate.getHours();
+
+            // 0 to 11 = Good Morning (12 AM to 11:59 AM)
+            if (hours >= 0 && hours < 12) {
+                document.querySelector('#greetings').innerText = `Good Morning ${personName}`;
+
+                // 12 to 16 = Good Afternoon (12 PM to 4:59 PM)
+            } else if (hours >= 12 && hours < 17) {
+                document.querySelector('#greetings').innerText = `Good Afternoon ${personName}`;
+
+                // 17 to 20 = Good Evening (5 PM to 8:59 PM)
+            } else if (hours >= 17 && hours < 21) {
+                document.querySelector('#greetings').innerText = `Good Evening ${personName}`;
+
+                // 21 to 23 = Good Night (9 PM to 11:59 PM)
+            } else {
+                document.querySelector('#greetings').innerText = `Good Night ${personName}`;
+            }
+
+
+        }
+        greet();
+        // greet('Azim')
+        let clicked = localStorage.getItem('clicked')|| 0;
+        function btnpress() {
+            clicked++;
+            localStorage.setItem('clicked', clicked);
+            updatebtn();
+        }
+        function updatebtn() {
+            let button = document.querySelector('#btn');
+            if (clicked % 2 === 0) {
+                button.classList.add('odd');
+                button.classList.remove('even');
+            } else {
+                button.classList.add('even');
+                button.classList.remove('odd');
+            }
+            button.innerText = clicked
+        }
+        updatebtn()
+    </script>
+</body>
+
+</html>
