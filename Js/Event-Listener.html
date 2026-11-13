@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        let buttonElement = document.querySelector('#btn');
+        buttonElement.addEventListener('click', function(event){
+
+            console.log('hello');
+        });
+        // store in variable and  refernces 
+         buttonElement = document.querySelector('#btn');
+         let copybtn = function(event){
+                console.log('hello2')
+         };
+         buttonElement.addEventListener('click', copybtn)
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background-image: url(/Assets/todo.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #main-heading {
+            text-align: center;
+        }
+
+        .grid-Container {
+            display: grid;
+            grid-template-columns: 150px 120px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #todo-input,
+        #todo-Date {
+            padding: 10px 5px;
+        }
+
+        .delete {
+            background-color: rgb(139, 3, 3);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        #add {
+            background-color: rgb(27, 132, 3);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-heading">Todo App</h1>
+    <div class="grid-Container">
+        <input type="text" placeholder="Enter Your Todo" id="todo-input">
+        <input type="date" id="todo-Date">
+        <button onclick="addtodo()" id="add">Add</button>
+    </div>
+
+    <div class="item-Container grid-Container">
+    </div>
+    <script>
+        let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+        displayTodo();
+        function addtodo() {
+            let inputElement = document.querySelector('#todo-input');
+            let dateElement = document.querySelector('#todo-Date');
+            let todoItem = inputElement.value;
+            let todoDate = dateElement.value;
+            todoList.push({ item: todoItem, dueDate: todoDate });
+            localStorage.setItem('todoList', JSON.stringify(todoList));
+            inputElement.value = '';
+            dateElement.value = '';
+            displayTodo();
+        }
+
+        function displayTodo() {
+            let ContainerElement = document.querySelector('.item-Container');
+            let newHtml = '';
+            for (i = 0; i < todoList.length; i++) {
+                let item = todoList[i].item;
+                let dueDate = todoList[i].dueDate;
+                newHtml += ` 
+                 <span>${item}</span>
+                 <span>${dueDate}</span>
+                 <button onclick="todoList.splice(${i}, 1);
+localStorage.setItem('todoList', JSON.stringify(todoList));
+displayTodo();
+" class="delete">delete</button>`
+            }
+            ContainerElement.innerHTML = newHtml;
+        }
+    </script>
+</body>
+
+</html>
