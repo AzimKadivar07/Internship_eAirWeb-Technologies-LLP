@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Different ways of printing out in console
+        console.log('hello');
+        console.warn('This is warning');
+        console.error('This is error');
+        // Diffrent Types of variable 
+        var a = 10;
+        let b = 10;
+        const c = 10;
+        //Declaration 
+        let d;
+        //inisialization
+        let e = 10;
+
+        //Data Types 
+        // datatype in js main 2 : primitive and non-primitive 
+        // primitive : num , string , null , undifined , Nan , Boolean , symbol , Bigint
+       // non-primitive : Array function Object
+
+        //num
+        var f = 20;
+        console.log(f);
+        //string
+        var g = 'azim'
+         console.log(g);
+        //null
+        var h = null
+         console.log(h);
+        // undifine
+        var i;
+         console.log(i);
+        //Nan
+        var j = 2
+        var k = 'azim'
+        console.log(j*k);
+        // Boolean
+        var l = 10
+        var m = 20
+        console.log(l>m);
+       
+        // Array 
+        let arr = [1,2,3,4,5,];
+        console.log(arr);
+        // with this we can see a specific value in array console.log(arr[i]); i means index and array index start from 0
+        console.log(arr[2]);
+        //  with this we can add element and the end of array 
+        arr.push(6);
+        console.log(arr)
+        // with this we can delete element of array
+        arr.pop();
+        console.log(arr);
+        // we can also make array of  diffrent data type  in js 
+        let arr2 = [10,'azim',null,20.33];
+        console.log(arr2)
+        // we can aslo make array of object 
+        let obj = [
+            { userName: 'kadivar',
+              age: 21, 
+            },
+
+               { userName: 'azim',
+              age: 17, 
+            },
+
+               { userName: 'abbas',
+              age: 30, 
+            }
+        ];
+        console.log(obj);
+        // with this we can see specific object in array
+        console.log(obj[1]);
+        // with this we can see in more detail we can see a specific element inside a specific object
+        console.log(obj[1].userName);
+        
+        // there are also array method like filter,map
+      
+      // function 
+      //function body 
+      function greet (){
+        console.log('good morning')
+      }
+      //function calling 
+      greet()
+       // passing parameter to function 
+        function greet2 (userName){
+        console.log('good morning',userName)
+      }
+      greet2('azim')
+       
+      // other ways of writing function 
+      // Anonymous Function - we can write function name before funtion keyword
+      greet3 = function(){
+        console.log('good morning kadivar');
+      }
+      greet3()
+      // Arrow Function 
+       greet4 = (userName) => {
+        console.log('good morning',userName)
+      }
+      greet4('Ak')
+      
+      // short cut method of arrow function you can remove brackets if you have single parameter you can remove() and if it is a single statement so you can aslo remove {}
+      // greet4 = userName => console.log('good morning',userName)
+      // greet4('Ak2')
+     
+      // Object 
+      student = {
+        studentName: 'Azim',
+        age: 15,
+        class: 'EC3',  
+      }
+      console.log(student)
+      // with this we can see specific value of object
+      console.log(student.class)
+      
+      //Method
+    //   method is function inside an object
+      product = {
+         productName: 'T-Shirt',
+         productPrice: 500,
+
+         display(){
+            console.log(product.productName);
+            console.log(product.productPrice);
+
+         }
+      };
+      product.display();
+
+      // Loop
+    //   whille, do-while, for, forEach
+
+ //while 
+    let say = 1;
+
+while (say <= 10) {
+    console.log('hello');
+    say++;
+}
+
+//do while
+let say2 = 1;
+
+do {
+    console.log('hello2');
+    say2++;
+} while (say2 <= 10);
+
+// for 
+for( say3 = 1; say3 <= 10; say3++){
+  console.log('hello3')
+}
+
+//forEach 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
+numbers.forEach((num) => {
+    console.log(num);
+});
+
+// short cut method 
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
+// numbers.forEach( num => console.log(num));
+
+// conditionsal operators 
+
+let age = 18
+if( age < 18){
+  console.log('kid')
+}else if( age < 30 ){
+  console.log('Adult')
+}else{
+  console.log('Senior Citizen')
+}
+
+// alert, confirm, prompt, 
+
+// alert('this is alert');
+// confirm('this is confirm');
+// let z = prompt('enetr your name');
+// console.log(z);
+
+</script>
+</body>
+</html>
